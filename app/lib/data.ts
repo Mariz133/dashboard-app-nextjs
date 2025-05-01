@@ -15,6 +15,7 @@ export async function fetchRevenue() {
   try {
     // Artificially delay a response for demo purposes.
     // Don't do this in production :)
+
 // --- START OF TEST DELAY (for Chapter 8) ---
     console.log('Fetching revenue data...');
     await new Promise((resolve) => setTimeout(resolve, 3000));
@@ -23,6 +24,7 @@ export async function fetchRevenue() {
 
      console.log('Data fetch completed after 3 seconds.');
 // --- END OF TEST DELAY ---
+
     return data;
   } catch (error) {
     console.error('Database Error:', error);
